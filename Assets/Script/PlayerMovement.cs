@@ -1,36 +1,71 @@
+using System.Collections;
+
+using System.Collections.Generic;
+
 using UnityEngine;
 
+[RequireComponent(typeof(CharacterController))]
 public class PlayerMovement : MonoBehaviour
 {
-    public float moveSpeed = 50f; 
-    private Transform cameraTransform; 
-    private Vector3 cameraOffset; 
+    public Camera playerCamera;
+    public float walkSpeed = 8f;
+    public float runSpeed = 12f;
+    public float jumpPower = 7f;
+    public float gravity = 10f;
+    public float lookSpeed = 2f;
+    public float lookXLimit = 45f;
+    public float defaultHeight = 2f;
+    public float crouchHeight = 1f;
+    public float crouchSpeed = 3f;
+
+    public Vector3 cameraOffset = new Vector3(0, 15, -10);
+
+    private Vector3 moveDirection = Vector3.zero;
+    private float rotationX = 0;
+    private CharacterController characterController;
+
+    private bool canMove = true;
 
     void Start()
     {
-        cameraTransform = Camera.main.transform;
-
-        if (cameraTransform == null)
-        {
-            Debug.LogError("Aucune caméra principale trouvée ! Vérifiez que votre caméra est bien taguée 'Main Camera'.");
-            return;
-        }
-        cameraOffset = cameraTransform.position - transform.position;
+        characterController = GetComponent<CharacterController>();
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = true;
     }
 
     void Update()
     {
-        float moveX = Input.GetKey(KeyCode.A) ? -1 : (Input.GetKey(KeyCode.D) ? 1 : 0);
-        float moveZ = Input.GetKey(KeyCode.W) ? 1 : (Input.GetKey(KeyCode.S) ? -1 : 0);
+        // Player movement logic
+        Vector3 forward = transform.TransformDirection(Vector3.forward);
+        Vector3 right = transform.TransformDirection(Vector3.right);
 
-        Vector3 movement = new Vector3(moveX, 0f, moveZ).normalized * moveSpeed * Time.deltaTime;
-        transform.Translate(movement, Space.World);
+        bool isRunning = Input.GetKey(KeyCode.LeftShift);
+        float curSpeedX = canMove ? (isRunning ? runSpeed : walkSpeed) * Input.GetAxis("Vertical") : 0;
+        float curSpeedY = canMove ? (isRunning ? runSpeed : walkSpeed) * Input.GetAxis("Horizontal") : 0;
+        float movementDirectionY = moveDirection.y;
+        moveDirection = (forward * curSpeedX) + (right * curSpeedY);
 
-        if (cameraTransform != null)
+        if (!characterController.isGrounded)
         {
-            cameraTransform.position = transform.position + cameraOffset;
-
-            cameraTransform.rotation = Quaternion.Euler(46.854f, 0f, 0f);
+            moveDirection.y -= gravity * Time.deltaTime;
         }
+
+        if (Input.GetKey(KeyCode.R) && canMove)
+        {
+            characterController.height = crouchHeight;
+            walkSpeed = crouchSpeed;
+            runSpeed = crouchSpeed;
+        }
+        else
+        {
+            characterController.height = defaultHeight;
+            walkSpeed = 8f;
+            runSpeed = 12f;
+        }
+
+        characterController.Move(moveDirection * Time.deltaTime);
+
+        // Update camera position to follow player
+        playerCamera.transform.position = transform.position + cameraOffset;
     }
 }
