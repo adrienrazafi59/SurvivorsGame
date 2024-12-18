@@ -18,7 +18,7 @@ public class PlayerMovement : MonoBehaviour
     public float crouchHeight = 1f;
     public float crouchSpeed = 3f;
 
-    public Vector3 cameraOffset = new Vector3(0, 15, -10);
+    private Vector3 cameraOffset = new Vector3(0, 25, -9);
 
     private Vector3 moveDirection = Vector3.zero;
     private float rotationX = 0;
@@ -29,8 +29,8 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         characterController = GetComponent<CharacterController>();
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = true;
+        //Cursor.lockState = CursorLockMode.Locked;
+        //Cursor.visible = true;
     }
 
     void Update()

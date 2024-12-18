@@ -11,6 +11,8 @@ public class EnemyFollow : MonoBehaviour
     private float groundHeight = 0f; // Hauteur du sol (y = 0)
     private float heightOffset; // Correction pour la hauteur en fonction du modèle
 
+    private Rigidbody rb; // Référence au Rigidbody
+
     void Start()
     {
         // Trouve automatiquement l'objet nommé "Player" dans la scène
@@ -30,6 +32,14 @@ public class EnemyFollow : MonoBehaviour
 
         // Calcule la hauteur du modèle pour corriger l'enfoncement dans le sol
         heightOffset = GetModelHeight();
+
+        // Ajoute et configure un Rigidbody pour permettre un mouvement fluide
+        rb = GetComponent<Rigidbody>();
+        if (rb == null)
+        {
+            rb = gameObject.AddComponent<Rigidbody>(); // Si pas de Rigidbody, on en crée un
+        }
+        rb.isKinematic = true; // On désactive la physique pour empêcher le Rigidbody d'interférer
     }
 
     void Update()
@@ -43,7 +53,10 @@ public class EnemyFollow : MonoBehaviour
         if (distanceToPlayer > stopDistance)
         {
             Vector3 direction = (player.position - transform.position).normalized;
-            transform.position += direction * speed * Time.deltaTime;
+            Vector3 movement = direction * speed * Time.deltaTime;
+
+            // Déplacer l'ennemi
+            rb.MovePosition(transform.position + movement); // Utilisation de MovePosition pour éviter les problèmes de collision
 
             // Ajuste la position pour que le mob reste au-dessus du sol
             transform.position = new Vector3(transform.position.x, groundHeight + heightOffset, transform.position.z);
