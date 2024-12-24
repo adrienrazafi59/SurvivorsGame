@@ -1,0 +1,268 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &929437553381345871
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: e28df4958efcec649bb6ec454222fab4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -84.821
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e28df4958efcec649bb6ec454222fab4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.77782524
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e28df4958efcec649bb6ec454222fab4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 91.80694
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e28df4958efcec649bb6ec454222fab4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e28df4958efcec649bb6ec454222fab4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e28df4958efcec649bb6ec454222fab4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e28df4958efcec649bb6ec454222fab4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e28df4958efcec649bb6ec454222fab4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e28df4958efcec649bb6ec454222fab4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e28df4958efcec649bb6ec454222fab4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8260642332660533103, guid: e28df4958efcec649bb6ec454222fab4, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: -7131095940029453227, guid: e28df4958efcec649bb6ec454222fab4, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: -6920690623926577443, guid: e28df4958efcec649bb6ec454222fab4, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: -6600570728876557273, guid: e28df4958efcec649bb6ec454222fab4, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: -5568537079685124002, guid: e28df4958efcec649bb6ec454222fab4, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: -5541035065461965182, guid: e28df4958efcec649bb6ec454222fab4, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: -5344881217032712375, guid: e28df4958efcec649bb6ec454222fab4, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: -4031621441853041576, guid: e28df4958efcec649bb6ec454222fab4, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: -3353397990946277450, guid: e28df4958efcec649bb6ec454222fab4, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: -1450400270514423276, guid: e28df4958efcec649bb6ec454222fab4, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 411834259942875862, guid: e28df4958efcec649bb6ec454222fab4, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e28df4958efcec649bb6ec454222fab4, type: 3}
+      propertyPath: m_Name
+      value: Enemy_BigBoss_Artillery
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e28df4958efcec649bb6ec454222fab4, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e28df4958efcec649bb6ec454222fab4, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 2055204863283653425, guid: e28df4958efcec649bb6ec454222fab4, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7559847919162368671, guid: e28df4958efcec649bb6ec454222fab4, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7607722699587004229, guid: e28df4958efcec649bb6ec454222fab4, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8271259608542421082, guid: e28df4958efcec649bb6ec454222fab4, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e28df4958efcec649bb6ec454222fab4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8178134939564287008}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e28df4958efcec649bb6ec454222fab4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2295518270921636417}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e28df4958efcec649bb6ec454222fab4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 926541579510007991}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e28df4958efcec649bb6ec454222fab4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1243386538322490595}
+  m_SourcePrefab: {fileID: 100100000, guid: e28df4958efcec649bb6ec454222fab4, type: 3}
+--- !u!1 &11099940025087774 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: e28df4958efcec649bb6ec454222fab4, type: 3}
+  m_PrefabInstance: {fileID: 929437553381345871}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8178134939564287008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 11099940025087774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32a2ed9ed0c8833809bed1e6b9dd88b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerName: Player
+  moveSpeed: 5
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 1
+--- !u!114 &2295518270921636417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 11099940025087774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ace85921c450dde4487f95cbed4db614, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyStatsList:
+  - enemyName: Enemy_BigBoss_Artillery
+    health: 1000
+    damage: 80
+    speed: 2
+    rewardPoints: 500
+  - enemyName: Enemy_Boss_Laser
+    health: 900
+    damage: 70
+    speed: 3
+    rewardPoints: 450
+  - enemyName: Enemy_MiniBoss_Laser
+    health: 600
+    damage: 50
+    speed: 4
+    rewardPoints: 300
+  - enemyName: Enemy_MiniBoss_TankLaser
+    health: 650
+    damage: 60
+    speed: 3.5
+    rewardPoints: 320
+  - enemyName: Enemy_SmallSpider
+    health: 200
+    damage: 10
+    speed: 8
+    rewardPoints: 50
+  - enemyName: Enemy_SmallTank
+    health: 300
+    damage: 15
+    speed: 6
+    rewardPoints: 75
+  - enemyName: Enemy_TankArtillery
+    health: 400
+    damage: 25
+    speed: 5
+    rewardPoints: 100
+  - enemyName: Enemy_TankGunBattery
+    health: 450
+    damage: 30
+    speed: 4
+    rewardPoints: 120
+  - enemyName: Enemy_TankLaser
+    health: 500
+    damage: 40
+    speed: 4.5
+    rewardPoints: 150
+--- !u!54 &926541579510007991
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 11099940025087774}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!64 &1243386538322490595
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 11099940025087774}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 2537422257332086475, guid: e28df4958efcec649bb6ec454222fab4, type: 3}

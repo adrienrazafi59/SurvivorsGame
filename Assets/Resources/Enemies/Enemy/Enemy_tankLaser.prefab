@@ -1,0 +1,256 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &5750913413125262
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 3581f89884e9e5b0eb0c3b676da2f35f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 20.736012
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3581f89884e9e5b0eb0c3b676da2f35f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.000004529953
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3581f89884e9e5b0eb0c3b676da2f35f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -7.0390635
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3581f89884e9e5b0eb0c3b676da2f35f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3581f89884e9e5b0eb0c3b676da2f35f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3581f89884e9e5b0eb0c3b676da2f35f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3581f89884e9e5b0eb0c3b676da2f35f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3581f89884e9e5b0eb0c3b676da2f35f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3581f89884e9e5b0eb0c3b676da2f35f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3581f89884e9e5b0eb0c3b676da2f35f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8538980372158898639, guid: 3581f89884e9e5b0eb0c3b676da2f35f, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: -8383124558419344257, guid: 3581f89884e9e5b0eb0c3b676da2f35f, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: -8118977103560683977, guid: 3581f89884e9e5b0eb0c3b676da2f35f, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: -7058507455302918411, guid: 3581f89884e9e5b0eb0c3b676da2f35f, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: -5743350618785959237, guid: 3581f89884e9e5b0eb0c3b676da2f35f, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: -4636300777304409883, guid: 3581f89884e9e5b0eb0c3b676da2f35f, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: -3994011554930240952, guid: 3581f89884e9e5b0eb0c3b676da2f35f, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: -3798597711559607027, guid: 3581f89884e9e5b0eb0c3b676da2f35f, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: -3588660610632481935, guid: 3581f89884e9e5b0eb0c3b676da2f35f, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3581f89884e9e5b0eb0c3b676da2f35f, type: 3}
+      propertyPath: m_Name
+      value: Enemy_tankLaser
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3581f89884e9e5b0eb0c3b676da2f35f, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3581f89884e9e5b0eb0c3b676da2f35f, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 2971542036940430761, guid: 3581f89884e9e5b0eb0c3b676da2f35f, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6367842933947562962, guid: 3581f89884e9e5b0eb0c3b676da2f35f, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7704327836215651521, guid: 3581f89884e9e5b0eb0c3b676da2f35f, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3581f89884e9e5b0eb0c3b676da2f35f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4426837247371484427}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3581f89884e9e5b0eb0c3b676da2f35f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5377818951628634059}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3581f89884e9e5b0eb0c3b676da2f35f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3553462603919875981}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3581f89884e9e5b0eb0c3b676da2f35f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 138584180565321738}
+  m_SourcePrefab: {fileID: 100100000, guid: 3581f89884e9e5b0eb0c3b676da2f35f, type: 3}
+--- !u!1 &924653807815797215 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 3581f89884e9e5b0eb0c3b676da2f35f, type: 3}
+  m_PrefabInstance: {fileID: 5750913413125262}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &4426837247371484427
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 924653807815797215}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!64 &5377818951628634059
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 924653807815797215}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -7155587161183647000, guid: 3581f89884e9e5b0eb0c3b676da2f35f, type: 3}
+--- !u!114 &3553462603919875981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 924653807815797215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32a2ed9ed0c8833809bed1e6b9dd88b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerName: Player
+  moveSpeed: 5
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 0
+--- !u!114 &138584180565321738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 924653807815797215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ace85921c450dde4487f95cbed4db614, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyStatsList:
+  - enemyName: Enemy_BigBoss_Artillery
+    health: 1000
+    damage: 80
+    speed: 2
+    rewardPoints: 500
+  - enemyName: Enemy_Boss_Laser
+    health: 900
+    damage: 70
+    speed: 3
+    rewardPoints: 450
+  - enemyName: Enemy_MiniBoss_Laser
+    health: 600
+    damage: 50
+    speed: 4
+    rewardPoints: 300
+  - enemyName: Enemy_MiniBoss_TankLaser
+    health: 650
+    damage: 60
+    speed: 3.5
+    rewardPoints: 320
+  - enemyName: Enemy_SmallSpider
+    health: 200
+    damage: 10
+    speed: 8
+    rewardPoints: 50
+  - enemyName: Enemy_SmallTank
+    health: 300
+    damage: 15
+    speed: 6
+    rewardPoints: 75
+  - enemyName: Enemy_TankArtillery
+    health: 400
+    damage: 25
+    speed: 5
+    rewardPoints: 100
+  - enemyName: Enemy_TankGunBattery
+    health: 450
+    damage: 30
+    speed: 4
+    rewardPoints: 120
+  - enemyName: Enemy_TankLaser
+    health: 500
+    damage: 40
+    speed: 4.5
+    rewardPoints: 150
