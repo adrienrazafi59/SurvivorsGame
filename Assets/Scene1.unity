@@ -405,11 +405,14 @@ MonoBehaviour:
     m_Bits: 1
   hitboxSize: {x: 3, y: 3, z: 3}
 --- !u!114 &1503584956
+<<<<<<< HEAD
 
 --- !u!114 &1444537976
 
     m_Bits: 0
 --- !u!114 &1444537976
+=======
+>>>>>>> 53ac907 (Revert "Merge pull request #9 from adrienrazafi59/RonoxDev")
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

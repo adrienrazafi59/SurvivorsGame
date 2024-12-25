@@ -324,6 +324,7 @@
 -analyzer:"/home/pn13-admin/Unity/Hub/Editor/2022.3.53f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/Script/Attack.cs"
 <<<<<<< HEAD
+<<<<<<< HEAD
 "Assets/Script/EnemyFollow.cs"
 =======
 "Assets/Script/CollisionManager.cs"
@@ -331,6 +332,9 @@
 "Assets/Script/EnemyFollow.cs"
 "Assets/Script/EnemyManager.cs"
 >>>>>>> 5c1cfed (Fix)
+=======
+"Assets/Script/EnemyFollow.cs"
+>>>>>>> 53ac907 (Revert "Merge pull request #9 from adrienrazafi59/RonoxDev")
 "Assets/Script/EnemySpawn.cs"
 "Assets/Script/PlayerMovement.cs"
 -langversion:9.0
