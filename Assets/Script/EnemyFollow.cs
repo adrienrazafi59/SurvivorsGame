@@ -2,59 +2,77 @@ using UnityEngine;
 
 public class EnemyFollow : MonoBehaviour
 {
-    public string playerName = "Player"; // Nom du joueur dans la hiérarchie
-    public float moveSpeed = 5f;
-    public LayerMask groundLayer; // Ajoutez une couche pour le sol
-    private Transform player;
-    private Rigidbody rb;
-    private Quaternion initialRotation;
+    private Transform player; // Référence vers l'objet du joueur
+    private float speed; // Vitesse aléatoire de l'ennemi
+    public float minSpeed = 2f; // Vitesse minimale des ennemis
+    public float maxSpeed = 4f; // Vitesse maximale des ennemis
+    public float stopDistance = 1.5f; // Distance minimum à laquelle l'ennemi s'arrête
+    private Quaternion initialRotation; // Rotation initiale spécifique à chaque modèle
+    private float groundHeight = 0f; // Hauteur du sol (y = 0)
+    private float heightOffset; // Correction pour la hauteur en fonction du modèle
+
+    private Rigidbody rb; // Référence au Rigidbody
 
     void Start()
     {
-        rb = GetComponent<Rigidbody>();
+        // Trouve automatiquement l'objet nommé "Player" dans la scène
+        player = GameObject.Find("Player").transform;
+
+        if (player == null)
+        {
+            Debug.LogError("Aucun objet nommé 'Player' trouvé dans la scène. Assurez-vous que le joueur est bien nommé 'Player'.");
+            return;
+        }
+
+        // Attribue une vitesse aléatoire à cet ennemi
+        speed = Random.Range(minSpeed, maxSpeed);
+
+        // Stocke la rotation initiale de l'ennemi
         initialRotation = transform.rotation;
 
-        // Trouve le joueur par son nom dans la hiérarchie
-        GameObject playerObject = GameObject.Find(playerName);
-        if (playerObject != null)
+        // Calcule la hauteur du modèle pour corriger l'enfoncement dans le sol
+        heightOffset = GetModelHeight();
+
+        // Ajoute et configure un Rigidbody pour permettre un mouvement fluide
+        rb = GetComponent<Rigidbody>();
+        if (rb == null)
         {
-            player = playerObject.transform;
+            rb = gameObject.AddComponent<Rigidbody>(); // Si pas de Rigidbody, on en crée un
         }
-        else
-        {
-            Debug.LogError("Player not found in the scene. Make sure there is a GameObject named 'Player'.");
-        }
+        rb.isKinematic = true; // On désactive la physique pour empêcher le Rigidbody d'interférer
     }
 
     void Update()
     {
         if (player == null) return;
 
-        // Ajuste la rotation pour regarder le joueur
-        Vector3 lookDirection = player.position - transform.position;
-        lookDirection.y = 0; // Ignore l'axe vertical
-        Quaternion targetRotation = Quaternion.LookRotation(lookDirection);
+        // Calcul de la distance entre l'ennemi et le joueur
+        float distanceToPlayer = Vector3.Distance(transform.position, player.position);
 
-        // Combine la rotation initiale avec la nouvelle orientation
-        transform.rotation = Quaternion.Euler(
-            initialRotation.eulerAngles.x,
-            targetRotation.eulerAngles.y,
-            initialRotation.eulerAngles.z
-        );
+        // Si l'ennemi est plus loin que stopDistance, il se déplace vers le joueur
+        if (distanceToPlayer > stopDistance)
+        {
+            Vector3 direction = (player.position - transform.position).normalized;
+            Vector3 movement = direction * speed * Time.deltaTime;
 
-        // Déplace l'ennemi vers le joueur
-        Vector3 moveDirection = lookDirection.normalized;
-        rb.velocity = moveDirection * moveSpeed;
+            // Déplacer l'ennemi
+            rb.MovePosition(transform.position + movement); // Utilisation de MovePosition pour éviter les problèmes de collision
 
-        // Ajuste la position verticale pour éviter que l'ennemi ne s'enfonce dans le sol
-        AdjustHeight();
-    }
+            // Ajuste la position pour que le mob reste au-dessus du sol
+            transform.position = new Vector3(transform.position.x, groundHeight + heightOffset, transform.position.z);
 
-    void AdjustHeight()
-    {
-        float groundHeight = 0f; // Hauteur du terrain
-        float modelHeight = GetModelHeight();
-        transform.position = new Vector3(transform.position.x, groundHeight + modelHeight, transform.position.z);
+            // Ajuste uniquement l'axe Y pour orienter l'ennemi vers le joueur
+            Vector3 lookDirection = player.position - transform.position;
+            lookDirection.y = 0; // Ignore l'axe vertical
+            Quaternion targetRotation = Quaternion.LookRotation(lookDirection);
+
+            // Combine la rotation initiale avec la nouvelle orientation
+            transform.rotation = Quaternion.Euler(
+                initialRotation.eulerAngles.x,
+                targetRotation.eulerAngles.y,
+                initialRotation.eulerAngles.z
+            );
+        }
     }
 
     // Fonction pour calculer la hauteur du modèle à partir de son collider ou renderer
@@ -74,7 +92,7 @@ public class EnemyFollow : MonoBehaviour
         Renderer renderer = GetComponent<Renderer>();
         if (renderer != null)
         {
-            height = renderer.bounds.extents.y; // Hauteur depuis le centre jusqu'au sommet
+            height = renderer.bounds.extents.y;
         }
 
         return height;
