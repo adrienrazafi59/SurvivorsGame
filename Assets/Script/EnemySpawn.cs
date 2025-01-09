@@ -1,29 +1,20 @@
 using UnityEngine;
-using System.Collections.Generic;
 
 public class EnemySpawn : MonoBehaviour
 {
-    public Transform player; // Référence au joueur
-    public float spawnRadius = 10f; // Rayon de spawn autour du joueur
-    public int spawnLimit = 50; // Limite totale d'ennemis
+    public GameObject enemyPrefab;
+    public Transform player;
 
-    private int spawnedEnemies = 0; // Nombre actuel d'ennemis spawnés
-    private bool bossSpawned = false; // Indicateur pour le boss
+    public float spawnRadius = 10f;
+    public int spawnLimit = 100;
 
-    private List<GameObject> enemyPrefabs = new List<GameObject>(); // Liste des ennemis normaux
-    private List<GameObject> bossPrefabs = new List<GameObject>(); // Liste des boss
+    private int spawnedEnemies = 0;
 
     void Start()
     {
-        // Charger tous les prefabs d'ennemis depuis le dossier Enemy
-        enemyPrefabs.AddRange(Resources.LoadAll<GameObject>("Enemies/Enemy"));
-
-        // Charger tous les prefabs de boss depuis le dossier Boss
-        bossPrefabs.AddRange(Resources.LoadAll<GameObject>("Enemies/Boss"));
-
-        if (enemyPrefabs.Count == 0 || bossPrefabs.Count == 0)
+        if (enemyPrefab == null)
         {
-            Debug.LogError("No enemy or boss prefabs found in the specified directories!");
+            Debug.LogError("Enemy prefab is not assigned!");
             return;
         }
 
@@ -44,43 +35,49 @@ public class EnemySpawn : MonoBehaviour
 
     void Spawn()
     {
-        // Si le boss n'a pas encore spawn, spawn le boss
-        if (!bossSpawned)
+        if (enemyPrefab == null || player == null || spawnedEnemies >= spawnLimit)
         {
-            SpawnBoss();
-            bossSpawned = true;
             return;
         }
 
-        // Sinon, spawn un ennemi normal
-        SpawnEnemy();
-    }
-
-    void SpawnBoss()
-    {
-        // Sélectionner un boss aléatoire dans la liste des boss
-        GameObject bossPrefab = bossPrefabs[Random.Range(0, bossPrefabs.Count)];
-        SpawnAtRandomPosition(bossPrefab);
-        Debug.Log($"Boss spawned: {bossPrefab.name}");
-    }
-
-    void SpawnEnemy()
-    {
-        // Sélectionner un ennemi aléatoire dans la liste des ennemis
-        GameObject enemyPrefab = enemyPrefabs[Random.Range(0, enemyPrefabs.Count)];
-        SpawnAtRandomPosition(enemyPrefab);
-        Debug.Log($"Enemy spawned: {enemyPrefab.name}");
-    }
-
-    void SpawnAtRandomPosition(GameObject prefab)
-    {
-        // Calculer une position aléatoire autour du joueur
         Vector3 randomDirection = Random.insideUnitSphere * spawnRadius;
-        randomDirection.y = 0; // Garder la position sur un plan horizontal
+        randomDirection.y = 0;
         Vector3 spawnPosition = player.position + randomDirection;
 
-        // Instancier l'ennemi
-        Instantiate(prefab, spawnPosition, Quaternion.identity);
+        GameObject enemy = Instantiate(enemyPrefab, spawnPosition, Quaternion.identity);
         spawnedEnemies++;
+
+        Enemy enemyScript = enemy.AddComponent<Enemy>();  // Adding Enemy script dynamically
+
+        // Abonnement à l'événement OnDeath du script Enemy pour réduire le nombre d'ennemis
+        //enemyScript.OnDeath += OnEnemyDeath;
+    }
+
+    void OnEnemyDeath()
+    {
+        spawnedEnemies--;
+        Debug.Log("-1 Enemy");
+    }
+
+    public class Enemy : MonoBehaviour
+    {
+        public delegate void DeathAction();
+        public event DeathAction OnDeath;
+
+        void OnTriggerEnter(Collider other)
+        {
+            if (other.CompareTag("Player"))
+            {
+                Die();
+                Debug.Log("Die");
+            }
+        }
+
+        void Die()
+        {
+            OnDeath?.Invoke();
+            Destroy(gameObject);
+            Debug.Log("Die");
+        }
     }
 }
