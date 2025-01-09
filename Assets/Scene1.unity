@@ -404,20 +404,12 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1
   hitboxSize: {x: 3, y: 3, z: 3}
-<<<<<<< HEAD
 --- !u!114 &1503584956
 
 --- !u!114 &1444537976
 
     m_Bits: 0
 --- !u!114 &1444537976
-=======
-
---- !u!114 &1503584956
-
---- !u!114 &1444537976
-
->>>>>>> 9dc028c (Fix scene)
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -429,10 +421,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b49ad64ac6bf791ab065271f1329b79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
-=======
-
->>>>>>> 9dc028c (Fix scene)
   player: {fileID: 1503584959}
   spawnRadius: 200
   spawnLimit: 100
@@ -444,16 +432,6 @@ MonoBehaviour:
   spawnLimit: 100
 --- !u!114 &1444537977
 
-<<<<<<< HEAD
-=======
-  enemyPrefab: {fileID: 1892536616}
-  player: {fileID: 1444537974}
-  spawnRadius: 100
-  startSpawnTime: 0.1
-  spawnTime: 0.1
---- !u!114 &1444537977
-=======
->>>>>>> 9dc028c (Fix scene)
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
