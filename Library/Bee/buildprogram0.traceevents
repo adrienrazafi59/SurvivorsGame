@@ -2,6 +2,9 @@
 { "pid": 35942, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-1" } },
 { "pid": 35942, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 68d6d4c (Stp Fix)
 { "pid": 35942, "tid": 1, "ts": 1736411308708603, "dur": 272967, "ph": "X", "name": "BuildProgram", "args": {} },
 { "pid": 35942, "tid": 1, "ts": 1736411308711144, "dur": 136761, "ph": "X", "name": "BuildProgramContextConstructor", "args": {} },
 { "pid": 35942, "tid": 1, "ts": 1736411308943036, "dur": 7228, "ph": "X", "name": "OutputData.Write", "args": {} },
@@ -9,6 +12,7 @@
 { "pid": 35942, "tid": 1, "ts": 1736411308952089, "dur": 28224, "ph": "X", "name": "JsonToString", "args": {} },
 { "pid": 35942, "tid": 1, "ts": 1736411308994903, "dur": 2347, "ph": "X", "name": "", "args": {} },
 { "pid": 35942, "tid": 1, "ts": 1736411308994005, "dur": 3755, "ph": "X", "name": "Write chrome-trace events", "args": {} },
+<<<<<<< HEAD
 =======
 { "pid": 35942, "tid": 1, "ts": 1734528886405234, "dur": 345469, "ph": "X", "name": "BuildProgram", "args": {} },
 { "pid": 35942, "tid": 1, "ts": 1734528886409510, "dur": 186167, "ph": "X", "name": "BuildProgramContextConstructor", "args": {} },
@@ -18,3 +22,5 @@
 { "pid": 35942, "tid": 1, "ts": 1734528886764173, "dur": 2537, "ph": "X", "name": "", "args": {} },
 { "pid": 35942, "tid": 1, "ts": 1734528886763209, "dur": 4033, "ph": "X", "name": "Write chrome-trace events", "args": {} },
 >>>>>>> 53ac907 (Revert "Merge pull request #9 from adrienrazafi59/RonoxDev")
+=======
+>>>>>>> 68d6d4c (Stp Fix)

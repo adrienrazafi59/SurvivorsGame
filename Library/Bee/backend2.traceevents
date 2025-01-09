@@ -1,5 +1,8 @@
 { "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 68d6d4c (Stp Fix)
 ,{ "pid":12345, "tid":0, "ts":1736411309030103, "dur":79, "ph":"X", "name": "IPC_Client_InitializeAndConnectToParent",  "args": { "detail":"" }}
 ,{ "pid":12345, "tid":0, "ts":1736411309030254, "dur":5183, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
 ,{ "pid":12345, "tid":0, "ts":1736411309035510, "dur":304, "ph":"X", "name": "BuildQueueInit",  "args": { "detail":"" }}
@@ -147,6 +150,7 @@
 ,{ "pid":12345, "tid":4, "ts":1736411309045849, "dur":254, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
 ,{ "pid":12345, "tid":4, "ts":1736411309046103, "dur":1225556, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
 ,{ "pid":12345, "tid":0, "ts":1736411310273377, "dur":773, "ph":"X", "name": "ProfilerWriteOutput" }
+<<<<<<< HEAD
 =======
 ,{ "pid":12345, "tid":0, "ts":1734528886967969, "dur":95, "ph":"X", "name": "IPC_Client_InitializeAndConnectToParent",  "args": { "detail":"" }}
 ,{ "pid":12345, "tid":0, "ts":1734528886968168, "dur":7128, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
@@ -319,4 +323,6 @@
 ,{ "pid":12345, "tid":4, "ts":1734528886992153, "dur":303780, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
 ,{ "pid":12345, "tid":0, "ts":1734528887297069, "dur":400, "ph":"X", "name": "ProfilerWriteOutput" }
 >>>>>>> 53ac907 (Revert "Merge pull request #9 from adrienrazafi59/RonoxDev")
+=======
+>>>>>>> 68d6d4c (Stp Fix)
 ,
