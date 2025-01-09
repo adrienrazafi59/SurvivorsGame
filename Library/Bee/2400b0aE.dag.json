@@ -121,7 +121,11 @@
       "DisplayName": "Writing Assembly-CSharp.rsp",
       "ActionType": "WriteFile",
       "PayloadOffset": 245,
+<<<<<<< HEAD
       "PayloadLength": 30224,
+=======
+      "PayloadLength": 30327,
+>>>>>>> 5c1cfed (Fix)
       "PayloadDebugContentSnippet": "-target:library\n-out:\"Library/",
       "Inputs": [],
       "Outputs": [
@@ -133,7 +137,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/2400b0aE.dag/Assembly-CSharp.rsp2",
       "DisplayName": "Writing Assembly-CSharp.rsp2",
       "ActionType": "WriteFile",
+<<<<<<< HEAD
       "PayloadOffset": 30556,
+=======
+      "PayloadOffset": 30659,
+>>>>>>> 5c1cfed (Fix)
       "PayloadLength": 0,
       "PayloadDebugContentSnippet": "",
       "Inputs": [],
@@ -352,7 +360,14 @@
         "/home/pn13-admin/Unity/Hub/Editor/2022.3.53f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Xml.XmlSerializer.dll",
         "/home/pn13-admin/Unity/Hub/Editor/2022.3.53f1/Editor/Data/NetStandard/ref/2.1.0/netstandard.dll",
         "Assets/Script/Attack.cs",
+<<<<<<< HEAD
         "Assets/Script/EnemyFollow.cs",
+=======
+        "Assets/Script/CollisionManager.cs",
+        "Assets/Script/EnemyController.cs",
+        "Assets/Script/EnemyFollow.cs",
+        "Assets/Script/EnemyManager.cs",
+>>>>>>> 5c1cfed (Fix)
         "Assets/Script/EnemySpawn.cs",
         "Assets/Script/PlayerMovement.cs",
         "/home/pn13-admin/Unity/Hub/Editor/2022.3.53f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll",
@@ -1714,7 +1729,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/2400b0aE.dag/Assembly-CSharp.dll.mvfrm.rsp",
       "DisplayName": "Writing Assembly-CSharp.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
+<<<<<<< HEAD
       "PayloadOffset": 30652,
+=======
+      "PayloadOffset": 30755,
+>>>>>>> 5c1cfed (Fix)
       "PayloadLength": 7022,
       "PayloadDebugContentSnippet": "Library/Bee/artifacts/mvdfrm/U",
       "Inputs": [],
